@@ -24,7 +24,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/Rashmi1526"
-                style={{ color: "white" }}
+                style={{ color: "var(--text-main)" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://mobile.twitter.com/RashmiSingh_"
-                style={{ color: "white" }}
+                style={{ color: "var(--text-main)" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -44,7 +44,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/rashmi-singh-5610b31b9/"
-                style={{ color: "white" }}
+                style={{ color: "var(--text-main)" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >

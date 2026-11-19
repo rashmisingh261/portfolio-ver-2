@@ -27,7 +27,7 @@ function Projects() {
             <FaShieldAlt className="purple" size={40} />
             Cisco <strong className="purple">Knowledge Contributions</strong>
           </h1>
-          <p style={{ color: "white" }}>
+          <p style={{ color: "var(--text-main)" }}>
             Articles and videos I have authored and contributed at Cisco.
           </p>
         </div>
@@ -36,7 +36,7 @@ function Projects() {
           {/* Cisco Articles */}
           <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={<FaFileAlt size={60} color="#6c63ff" />}
+              imgPath={<FaFileAlt size={60} color="#6f4f82" />}
               title="Configure Multiple Tunnel Groups with SAML on ASA"
               description="Step-by-step guide on configuring multiple tunnel groups with SAML for ASA."
               link="https://www.cisco.com/c/en/us/support/docs/security/secure-client-5/222916-configure-multiple-tunnel-groups-with-sa.html"
@@ -45,7 +45,7 @@ function Projects() {
 
           <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={<FaFileAlt size={60} color="#6c63ff" />}
+              imgPath={<FaFileAlt size={60} color="#6f4f82" />}
               title="Configure Route Based VPN with Static Route on FTD (FDM)"
               description="Configuration guide for setting up a route-based VPN with a static route on FTD managed by FDM."
               link="https://www.cisco.com/c/en/us/support/docs/security-vpn/internet-security-association-key-management-protocol-isakmp/223198-configure-route-based-vpn-with-static.html"
@@ -55,7 +55,7 @@ function Projects() {
           {/* Cisco Videos */}
           <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={<FaVideo size={60} color="#6c63ff" />}
+              imgPath={<FaVideo size={60} color="#6f4f82" />}
               title="How to Configure Local LAN Access in Cisco Secure Client (AnyConnect)"
               description="Step-by-step video guide for configuring local LAN access in Cisco Secure Client."
               link="https://www.youtube.com/watch?v=t00SFi_IwwA"
@@ -64,7 +64,7 @@ function Projects() {
 
           <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={<FaVideo size={60} color="#6c63ff" />}
+              imgPath={<FaVideo size={60} color="#6f4f82" />}
               title="Install Certificate on FTD Managed by FDM"
               description="Video guide on how to install a certificate on FTD managed by FDM."
               link="https://video.cisco.com/detail/video/6370020067112"
@@ -76,7 +76,7 @@ function Projects() {
         <h1 className="project-heading">
           My <strong className="purple">College Projects </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--text-main)" }}>
           A few projects I built during my academic journey.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -15,10 +15,21 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [theme, setTheme] = useState(
+    () => document.documentElement.getAttribute("data-theme") || "light"
+  );
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", theme === "dark" ? "#140f23" : "#fff9f3");
+  }, [theme]);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -92,9 +103,19 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            
-
-            
+            <Nav.Item>
+              <button
+                type="button"
+                className="theme-toggle"
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                aria-label={
+                  theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+                }
+                title={theme === "dark" ? "Light theme" : "Dark theme"}
+              >
+                {theme === "dark" ? <BsSun /> : <BsMoon />}
+              </button>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

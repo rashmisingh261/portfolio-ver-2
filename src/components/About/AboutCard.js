@@ -40,7 +40,7 @@ function AboutCard() {
             <li className="about-activity">🥾 Hiking and learning new things</li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{ color: "var(--text-secondary)" }}>
             "Speak in such a way that others love to listen to you.Listen in such a way that others love to speak to you!"{" "}
           </p>
           <footer className="blockquote-footer">Rashmi</footer>
