@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
-//import Button from "react-bootstrap/Button";
+import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-//import pdf from "../../Assets/../Assets/Rashmi-singh-Resume.pdf";
-//import { AiOutlineDownload } from "react-icons/ai";
+import pdf from "../../Assets/rashmi_singh_resume.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/Rashmi1526/online-resume/main/RashmiSingh.pdf";
+  "https://raw.githubusercontent.com/Rashmi1526/online-resume/main/rashmi_singh_resume.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -23,15 +23,15 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          {/* <Button
+          <Button
             variant="primary"
             href={pdf}
-            target="_blank"
+            download="rashmi_singh_resume.pdf"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download Resume
-          </Button> */}
+          </Button>
         </Row>
 
         <Row className="resume">
@@ -41,15 +41,15 @@ function ResumeNew() {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          {/* <Button
+          <Button
             variant="primary"
             href={pdf}
-            target="_blank"
+            download="rashmi_singh_resume.pdf"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download Resume
-          </Button> */}
+          </Button>
         </Row>
       </Container>
     </div>

@@ -18,26 +18,19 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I first got into front-end development a few years ago because it gave me a way to visualize progress and results quickly and literally, which made programming feel exciting and tangible. What started as a trial to see if I’d enjoy coding turned into something I loved, and I’ve kept at it ever since. I’m fluent in classics like C++, JavaScript, and Python, and I enjoy building new web technologies and products. 🤷‍♂️
-              <br />
-              <br />During my internship at Cisco, I developed a strong interest in computer networking, and today I specialize in <i>
-                <b className="purple"> VPNs, DNS, TCP/IP, and SSH </b>
-              </i> . I’m currently preparing for the CCIE certification, further deepening my expertise in network security and infrastructure.
-              
-
+            I started my journey in technology with a curiosity for building things through code. My early interest in frontend development introduced me to programming through C++, JavaScript, and Python, where I enjoyed turning ideas into tangible products.
               <br />
               <br />
-             
-              In my free time, I am catching up on my <b className="purple">Front-end Skills</b> and exploring
-<i>
-  <b className="purple"> Modern Frameworks</b>
-</i>
-&nbsp; like&nbsp;
-<i>
-  <b className="purple">Next.js</b>
-</i>
-&nbsp; along with <i><b className="purple">Node.js</b></i> to stay connected to the creative side of development.
-              
+              During my internship and subsequent full-time experience at <b className="purple">Cisco</b>, I discovered my passion for computer networking and cybersecurity. What started with traditional networking and infrastructure gradually evolved into a specialization in VPN technologies, network security, Zero Trust, and Secure Access Service Edge (SASE).
+              <br />
+              <br />
+              Today, I work at <b className="purple">Palo Alto Networks as a Technical Consulting Engineer in the Focused Services team</b>, managing enterprise customer accounts, owning complex TAC escalations, and helping customers resolve critical security challenges. I also work on internal AI-driven automation initiatives involving Python, REST APIs, automated log analysis, and AI-assisted troubleshooting.
+              <br />
+              <br />
+              My journey has taken me from building web interfaces to troubleshooting complex enterprise networks and now working at the intersection of <b className="purple">SASE, cybersecurity, cloud networking, and AI automation</b>.
+              <br />
+              <br />
+              I continue to explore modern technologies, build automation solutions, and learn how emerging technologies can make networks more secure, intelligent, and resilient.
             </p>
           </Col>
           {/* <Col md={4} className="myAvtar">
